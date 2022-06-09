@@ -1,6 +1,12 @@
 # admin_page_template
 
-A new Flutter project.
+Admin page template built for Flutter Web.
+
+# Packages
+
+run ```flutter pub get```
+
+  ・Google Fonts
 
 ## Getting Started
 
