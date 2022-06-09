@@ -32,6 +32,20 @@ class Responsiveness extends StatelessWidget {
   static bool isLargeScreen(BuildContext context) =>
       MediaQuery.of(context).size.width >= largeScreenSize;
 
+  // LayoutBuilder returning type of screen based on the constartins max width
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth >= largeScreenSize) {
+          return largeScreen;
+        } else if (constraints.maxWidth < largeScreenSize &&
+            constraints.maxWidth >= mediumScreenSize) {
+          return mediumScreen;
+        } else {
+          return smallScreen;
+        }
+      },
+    );
+  }
 }
