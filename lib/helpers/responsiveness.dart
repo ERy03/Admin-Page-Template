@@ -5,6 +5,10 @@ const int mediumScreenSize = 768;
 const int smallScreenSize = 360;
 
 class Responsiveness extends StatelessWidget {
+  final Widget largeScreenSize;
+  final Widget mediumScreenSize;
+  final Widget smallScreenSize;
+
   const Responsiveness({Key? key}) : super(key: key);
 
   @override
