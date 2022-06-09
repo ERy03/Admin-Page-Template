@@ -22,6 +22,11 @@ class MyApp extends StatelessWidget {
             GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme).apply(
           bodyColor: Colors.black,
         ),
+        // Constructs an object that selects a transition based on the platform
+        pageTransitionsTheme: const PageTransitionsTheme(builders: {
+          TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
+        }),
       ),
     );
   }
