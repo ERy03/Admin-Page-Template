@@ -1,3 +1,4 @@
+import 'package:admin_page_template/constants/style.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Admin Page",
       theme: ThemeData(
-        scaffoldBackgroundColor: ,
+        // scaffoldBackgroundColor to change the background color on all screens
+        scaffoldBackgroundColor: light,
         textTheme:
       ),
     );
