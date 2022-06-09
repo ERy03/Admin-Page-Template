@@ -9,7 +9,12 @@ class Responsiveness extends StatelessWidget {
   final Widget mediumScreenSize;
   final Widget smallScreenSize;
 
-  const Responsiveness({Key? key}) : super(key: key);
+  const Responsiveness(
+      {Key? key,
+      required this.largeScreenSize,
+      required this.mediumScreenSize,
+      required this.smallScreenSize})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {}
