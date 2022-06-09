@@ -2,11 +2,16 @@
 
 Admin page template built for Flutter Web.
 
+Flutter version: 3.0.1
+Channel Stable
+
+Dart version: 2.17.1
+
 # Packages
 
 run ```flutter pub get```
 
-  ・Google Fonts
+  ・google_fonts: ^3.0.1
 
 ## Getting Started
 
