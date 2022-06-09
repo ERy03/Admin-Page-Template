@@ -23,6 +23,11 @@ class Responsiveness extends StatelessWidget {
   static bool isSmallScreen(BuildContext context) =>
       MediaQuery.of(context).size.width < mediumScreenSize;
 
+  // Is it a medium screen? (Greatet than or equal to 768 and less than 1366)
+  static bool isMediumScreen(BuildContext context) =>
+      MediaQuery.of(context).size.width >= mediumScreenSize &&
+      MediaQuery.of(context).size.width < largeScreenSize;
+
   @override
   Widget build(BuildContext context) {}
 }
