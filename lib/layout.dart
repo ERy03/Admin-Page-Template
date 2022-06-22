@@ -1,3 +1,5 @@
+import 'package:admin_page_template/widgets/large_screen_layout.dart';
+import 'package:admin_page_template/widgets/small_screen_layout.dart';
 import 'package:flutter/material.dart';
 
 class SiteLayout extends StatelessWidget {
@@ -10,20 +12,7 @@ class SiteLayout extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.black,
       ),
-      body: Row(
-        children: [
-          Expanded(
-            child: Container(
-              color: Colors.red,
-            ),
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.blue,
-            ),
-          ),
-        ],
-      ),
+      body: SmallScreenLayout(),
     );
   }
 }
