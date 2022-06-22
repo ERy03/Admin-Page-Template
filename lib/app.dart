@@ -1,3 +1,4 @@
+import 'package:admin_page_template/layout.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,7 +27,7 @@ class App extends StatelessWidget {
         }),
       ),
       // home:
-      home: Text("Home"),
+      home: SiteLayout(),
     );
   }
 }
