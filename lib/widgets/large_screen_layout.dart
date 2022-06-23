@@ -1,3 +1,4 @@
+import 'package:admin_page_template/widgets/side_menu.dart';
 import 'package:flutter/material.dart';
 
 class LargeScreenLayout extends StatelessWidget {
@@ -9,9 +10,7 @@ class LargeScreenLayout extends StatelessWidget {
       children: [
         Expanded(
           // flex: 1,
-          child: Container(
-            color: Colors.red,
-          ),
+          child: SideMenu(),
         ),
         Expanded(
           flex: 5,
