@@ -62,8 +62,20 @@ class App extends StatelessWidget {
       key: state.pageKey,
       child: Scaffold(
         body: Center(
-          child: Text(
-            state.error.toString(),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  "images/error.png",
+                  width: 450,
+                ),
+                Text(
+                  state.error.toString(),
+                  style: const TextStyle(fontSize: 24),
+                ),
+              ],
+            ),
           ),
         ),
       ),
