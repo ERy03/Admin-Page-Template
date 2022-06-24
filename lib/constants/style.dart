@@ -8,5 +8,6 @@ Color dark = const Color(0xFF363740);
 Color active = const Color(0xFF3C19C0);
 
 Color grey = const Color(0x4B000000);
+Color green = const Color(0x007DCD61);
 
 // const defaultPadding = 16.0;

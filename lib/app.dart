@@ -50,7 +50,7 @@ class App extends StatelessWidget {
       GoRoute(
         name: "user",
         path: '/user',
-        builder: (BuildContext context, GoRouterState state) => UserPage(),
+        builder: (BuildContext context, GoRouterState state) => SiteLayout(),
       ),
       // GoRoute(
       //   path: '/page2',

@@ -64,8 +64,14 @@ class SideMenu extends StatelessWidget {
             onTap: () {},
           ),
           ListTile(
+            // selected: true,
+            leading: Icon(
+              Icons.panorama_vertical_select_rounded,
+              color: Colors.green,
+            ),
+            // selectedTileColor: Colors.red,
             contentPadding:
-                EdgeInsets.only(left: MediaQuery.of(context).size.width / 18),
+                EdgeInsets.only(right: MediaQuery.of(context).size.width / 27),
             minVerticalPadding: 16,
             title: const Text(
               'ユーザー',
